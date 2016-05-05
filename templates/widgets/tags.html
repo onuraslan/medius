@@ -1,0 +1,8 @@
+<div class="right-head">
+     Tags
+</div>
+<div class="tags">
+    {% for tag, null in tags %}
+    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+    {% endfor %}
+</div>
