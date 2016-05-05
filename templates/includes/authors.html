@@ -1,0 +1,17 @@
+<div class="right-head">
+     Authors
+</div>
+<div class="post-meta">
+    {% for author, null in authors %}
+        <div class="pure-g post-category-info">
+            <div class="pure-u">
+                <a href="{{ SITEURL }}/{{ author.url }}"><img class="post-avatar" src="{{ MEDIUS_AUTHORS.get(author|string).image }}" alt="{{ author|string }}"></a>
+            </div>
+            <div class="pure-u meta-data">
+                <a class="category" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a><br \>
+                {{ MEDIUS_AUTHORS.get(author|string).description }}
+            </div>
+        </div>
+        <br />
+    {% endfor %}
+</div>
