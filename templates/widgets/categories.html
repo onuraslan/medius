@@ -1,0 +1,18 @@
+<div class="right-head">
+     Categories
+</div>
+<div class="post-meta tags">
+    {% for category, null in categories %}
+        <a class="category" href="{{ SITEURL }}/{{ category.url }}">
+            <div class="pure-g post-category-info">
+                <div class="pure-u">
+                    <img class="post-avatar" src="{{ MEDIUS_CATEGORIES.get(category|string).thumbnail }}" alt="{{ category|string }}">
+                </div>
+                <div class="pure-u meta-data">
+                    <div class="category-card-title">{{ category }}</div>
+                    {{ MEDIUS_CATEGORIES.get(category|string).description }}
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+</div>

@@ -200,6 +200,25 @@ div.main-container {
                 text-transform: uppercase;
                 font-size: 11px;
             }
+
+            div.author-card {
+                display: flex;
+
+                img {
+                    height: 55px;
+                    border-radius: 3px;
+                    margin-right: 10px;
+                }
+            }
+
+            div.category-card-title {
+                color: #57ad68;
+                font-size: 14px;
+            }
+
+            div.category-card-title:hover {
+                color: #468c54;
+            }
         }
     }
 

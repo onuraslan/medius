@@ -121,6 +121,17 @@ div.main-container {
       letter-spacing: .1em;
       text-transform: uppercase;
       font-size: 11px; }
+    div.main-container div.right-container div.right-bar div.author-card {
+      display: flex; }
+      div.main-container div.right-container div.right-bar div.author-card img {
+        height: 55px;
+        border-radius: 3px;
+        margin-right: 10px; }
+    div.main-container div.right-container div.right-bar div.category-card-title {
+      color: #57ad68;
+      font-size: 14px; }
+    div.main-container div.right-container div.right-bar div.category-card-title:hover {
+      color: #468c54; }
   div.main-container img.post-image {
     margin-top: 20px;
     width: 90%; }
